@@ -1,0 +1,106 @@
+@font-face{
+	font-family: Dungeon;
+	src: url("../fonts/dungeon.TTF");
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #9e9c93;
+	color: #210606;
+	background-image: url("../img/bg.png");
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+td{
+	border: 1px solid black;
+	padding: 6px;
+}
+
+#titulo{
+	margin-top: 0.5em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-family: "Dungeon", "Arial", sans-serif;
+	font-size: 3em;
+
+	border-color: #210606;
+	border-style: solid;
+	border-radius: 1vw;
+	border-right-width: 0;
+	border-top-width: 3px;
+	border-left-width: 0;
+	border-bottom-width: 3px;
+
+	width: 5em;
+}
+
+table{
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 18px;
+	border-collapse: collapse;
+	padding: 0;
+	margin: 10px;
+	text-align: center;
+	background-color: #ece7c4;
+	color: #210606;
+	box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.5);
+}
+
+input{
+	background-color: #ece7c4;
+	border-color: #210606;
+	border-width: 1px;
+	height: 1.6em;
+	text-align: center;
+	font-size: 15px;
+}
+
+input[type=number]{
+	width: 4em;
+}
+
+input[type="radio"]{
+	cursor: pointer;
+}
+
+button{
+	border: 1px solid #210606;
+	background-color: #ece7c4;
+	width: 2em;
+	height: 2em;
+}
+
+button:hover{
+	color: white;
+}
+
+#addclass:hover{
+	background-color: green;
+}
+
+#rmclass:hover{
+	background-color: red;
+}
+
+#classes input{
+	margin-bottom: 0.6em;
+	display: block;
+}
+
+.column{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
