@@ -12,6 +12,7 @@ body{
 	background-color: #9e9c93;
 	color: #210606;
 	background-image: url("../img/bg.png");
+	background-attachment: fixed;
 }
 
 .flex-container{
@@ -50,7 +51,6 @@ table{
 	font-family: "Helvetica", "Arial", sans-serif;
 	font-size: 18px;
 	border-collapse: collapse;
-	padding: 0;
 	text-align: center;
 	background-color: #ece7c4;
 	color: #210606;
@@ -97,7 +97,7 @@ button{
 
 .column{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	min-width: 310px;
@@ -119,4 +119,20 @@ table td:first-of-type{
 	color: #ece7c4;
 	border-color: #ece7c4;
 	width: 7em;
+}
+
+#two .total{
+	height: 25%;
+}
+
+#two .atributos{
+	height: 50%;
+}
+
+#two .testes{
+	height: 25%;
+}
+
+#one .cabec{
+	height: 100%;
 }
