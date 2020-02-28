@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/criador.css">
 	<link rel="icon" href="assets/img/favicon.png">
-	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script type="text/javascript" src="assets/js/criador.js"></script>
 	<title>RPG calc</title>
 </head>
 
@@ -14,12 +14,14 @@
 
 	<header><h1 id="titulo">Criador de ficha</h1></header>
 
-	<form>
+	<form id="dados" method="post">
 
 		<div class="flex-container">
 
 
-			<div class="column">
+			<div class="column" id="one">
+
+			<!--INÍCIO DA TABELA DE DADOS PRINCIPAIS-->
 
 				<table class="cabec">
 
@@ -44,7 +46,19 @@
 
 					<tr>
 						<td>Tendência:</td>
-						<td id="tend"><input type="text" name="tend"></td>
+						<td id="tend">
+							<select form="dados" name="tend">
+								<option value="leal e bom">Leal e bom</option>
+								<option value="neutro e bom">Neutro e bom</option>
+								<option value="caotico e bom">Caótico e bom</option>
+								<option value="leal e neutro">Leal e neutro</option>
+								<option value="neutro e neutro">Neutro e neutro</option>
+								<option value="caotico e neutro">Caótico e neutro</option>
+								<option value="leal e mau">Leal e mau</option>
+								<option value="neutro e mau">Neutro e mau</option>
+								<option value="caotico e mau">Caótico e mau</option>
+							</select>
+						</td>
 					</tr>
 
 					<tr>
@@ -65,12 +79,12 @@
 					<tr>
 						<td>Sexo:</td>
 						<td id="sexo">
-							<label for="macho">Macho</label>
-							<input type="radio" name="sexo" id="macho"><br>
-							<label for="femea">Fêmea</label>
-							<input type="radio" name="sexo" id="femea"><br>
-							<label for="outros">Outros</label>
-							<input type="radio" name="sexo" id="outros">
+							<div class="rowsex"><input type="radio" name="sexo" id="macho">
+							<label for="macho">Macho</label></div>
+							<div class="rowsex"><input type="radio" name="sexo" id="femea">
+							<label for="femea">Fêmea</label></div>
+							<div class="rowsex"><input type="radio" name="sexo" id="outros">
+							<label for="outros">Outros</label></div>
 						</td>
 					</tr>
 
@@ -86,26 +100,36 @@
 
 				</table>
 
+			<!--FIM DA TABELA DE DADOS PRINCIPAIS-->
+
 			</div>
 
 
-			<div class="column">
+			<div class="column" id="two">
+
+			<!--INÍCIO DAS TABELAS DA COLUNA 2-->
 
 				<table class="total">
 
 					<tr>
 						<td>PV:</td>
-						<td id="pv"></td>
+						<td id="pv">
+							<input type="number" name="pv">
+						</td>
 					</tr>
 
 					<tr>
 						<td>CA:</td>
-						<td id="ca"></td>
+						<td id="ca">
+							<input type="number" name="ca">
+						</td>
 					</tr>
 
 					<tr>
 						<td>Deslocamento:</td>
-						<td id="desloc"></td>
+						<td id="desloc">
+							<input type="number" name="desloc">
+						</td>
 					</tr>
 
 				</table>
@@ -150,35 +174,34 @@
 
 				</table>
 
-
-
-
 				<table class="testes">
 
 					<tr>
 						<td>Fortitude:</td>
-						<td id="fortt"></td>
+						<td id="fortt">
+							<input type="number" name="fortt">
+						</td>
 					</tr>
 
 					<tr>
 						<td>Reflexo:</td>
-						<td id="reflex"></td>
+						<td id="reflex">
+							<input type="number" name="reflex">
+						</td>
 					</tr>
 
 					<tr>
 						<td>Vontade:</td>
-						<td id="vont"></td>
+						<td id="vont">
+							<input type="number" name="vont">
+						</td>
 					</tr>
 
 				</table>
 
-
-
-
-				
+			<!--INÍCIO DAS TABELAS DA COLUNA 2-->				
 
 			</div>
-
 
 		</div>
 
