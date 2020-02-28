@@ -100,8 +100,8 @@ button{
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	flex-basis: 25vw;
-	max-width: 90vw;
+	min-width: 310px;
+	width: 25%;
 }
 
 #sexo div{
@@ -118,4 +118,5 @@ table td:first-of-type{
 	background-color: #210606;
 	color: #ece7c4;
 	border-color: #ece7c4;
+	width: 7em;
 }
