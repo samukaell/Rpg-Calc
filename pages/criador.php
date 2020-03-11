@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/basic.css">
 	<link rel="stylesheet" type="text/css" href="../css/criador.css">
 	<link rel="icon" href="../img/favicon.png">
 	<script type="text/javascript" src="../js/criador.js"></script>

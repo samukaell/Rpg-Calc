@@ -1,20 +1,3 @@
-@font-face{
-	font-family: Dungeon;
-	src: url("../fonts/dungeon.TTF");
-}
-
-*{
-	margin: 0;
-	padding: 0;
-}
-
-body{
-	background-color: #9e9c93;
-	color: #210606;
-	background-image: url("../img/bg.png");
-	background-attachment: fixed;
-}
-
 .flex-container{
 	display: flex;
 	justify-content: center;
