@@ -6,5 +6,13 @@
 </head>
 <body>
 	<?php include "components/navbar.php" ?>
+	<main>
+		<div id="login-card">
+			<div class="content">
+				<h2 class="title">RPG Calc</h2>
+				<a href="#" class="botao"><button>Entrar</button></a>
+			</div>
+		</div>
+	</main>
 </body>
 </html>

@@ -10,11 +10,8 @@ td{
 }
 
 #titulo{
-	margin-top: 3vh;
-	margin-bottom: 3vh; 
+	margin: 3vh auto;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 
 	font-family: "Dungeon", "Arial", sans-serif;
 	font-size: 3em;

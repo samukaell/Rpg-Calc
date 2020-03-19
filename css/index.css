@@ -1,0 +1,57 @@
+#login-card{
+	position: relative;
+	top: calc(50vh - 200px);
+
+	width: 21rem;
+	height: 14rem;
+
+	background-color: #210606;
+	color: #9E9C93;
+
+	margin: auto auto;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 3rem;
+	box-shadow: 0.2rem 0.15rem 0.4rem 0.2rem rgba(0,0,0,0.7);
+}
+
+.content{
+	display: flex;
+	align-items: center;
+	align-content: space-around;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.title{
+	font-family: "Dungeon", "Arial", serif;
+	font-size: 5rem;
+	text-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.7);
+}
+
+.botao button{
+	width: 5.4rem;
+	height: 2.8rem;
+	font-size: 1.2rem;
+	font-family: "Helvetica", sans-serif;
+	border-radius: 0.8rem;
+	background-color: #ece7c4;
+	transition: 0.1s;
+	border: none;
+	box-shadow: 0.08rem 0.08rem 0.15rem 0.1rem rgba(0,0,0,0.7);
+}
+
+.botao{
+	text-decoration: none;
+	color: #210606;
+}
+
+.botao button:hover{
+	cursor: pointer;
+	box-shadow: 0.08rem 0.08rem 0.15rem 0.1rem rgba(0,0,0,0.7) inset;
+	transition: 0.1s;
+}

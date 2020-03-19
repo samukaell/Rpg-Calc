@@ -10,8 +10,6 @@
 
 	<?php include "../components/navbar.php" ?>
 
-	<br><br><br>
-
 	<main>
 
 		<div id="content">
