@@ -5,8 +5,11 @@
 }
 
 td{
-	border: 1px solid black;
 	padding: 6px;
+}
+
+tr{
+	border: 1px solid #9E9C93;
 }
 
 #titulo{
@@ -46,6 +49,12 @@ input, select{
 
 input[type=number]{
 	width: 4em;
+	-webkit-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
 }
 
 input[type="radio"]{
@@ -61,11 +70,15 @@ button{
 }
 
 #addclass:hover{
-	background-color: green;
+	background-color: darkgreen;
+	border-color: darkgreen;
+	cursor: pointer;
 }
 
 #rmclass:hover{
-	background-color: red;
+	background-color: darkred;
+	border-color: darkred;
+	cursor: pointer;
 }
 
 
@@ -114,4 +127,23 @@ table td:first-of-type{
 
 #one .cabec{
 	height: 100%;
+}
+
+.classe{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: space-around;
+	align-items: center;
+	justify-content: center;
+}
+
+.classe input:first-of-type{
+	width: 70%;
+	border-right-width: 0; 
+}
+
+.classe input:last-of-type{
+	width: 30%;
+	border-left-color: rgba(0,0,0,0.25);
 }

@@ -37,7 +37,25 @@
 									<tr>
 										<td>Classes:</td>
 										<td id="classes">
-											<input type="text" name="classe1" id="classe1">
+											<div class="classe">
+												<input list="classOpt" name="classe1" placeholder="classe">
+												<input type="number" name="nvclasse1" placeholder="nível">
+											</div>
+
+											<datalist id="classOpt">
+												<option value="Bárbaro">
+												<option value="Bardo">
+												<option value="Clérigo">
+												<option value="Druida">
+												<option value="Feiticeiro">
+												<option value="Guerreiro">
+												<option value="Ladino">
+												<option value="Mago">
+												<option value="Monge">
+												<option value="Paladino">
+												<option value="Ranger">
+											</datalist>
+
 											<button type="button" id="addclass">+</button>
 											<button type="button" id="rmclass">-</button>
 										</td>
@@ -45,7 +63,20 @@
 		
 									<tr>
 										<td>Raça:</td>
-										<td id="raca"><input type="text" name="raca"></td>
+										<td id="raca">
+											<input list="racaOpt" name="raca">
+
+											<datalist id="racaOpt">
+												<option value="Humano">
+												<option value="Anão">
+												<option value="Elfo">
+												<option value="Gnomo">
+												<option value="Meio-elfo">
+												<option value="Meio-orc">
+												<option value="Halfling">
+											</datalist>
+											
+										</td>
 									</tr>
 		
 									<tr>
@@ -76,8 +107,8 @@
 									</tr>
 		
 									<tr>
-										<td>Altura:</td>
-										<td id="altu"><input type="number" name="altu"><label for="altu"> m</label></td>
+										<td>Altura(m):</td>
+										<td id="altu"><input type="number" name="altu"></td>
 									</tr>
 		
 									<tr>
@@ -93,8 +124,8 @@
 									</tr>
 		
 									<tr>
-										<td>Peso:</td>
-										<td id="peso"><input type="number" name="peso"><label for="peso"> Kg</label></td>
+										<td>Peso(Kg):</td>
+										<td id="peso"><input type="number" name="peso"></td>
 									</tr>
 		
 									<tr>

@@ -23,12 +23,12 @@ window.onload = function(){
 				modValue = Math.floor((Number(attrX.value)-10)/2);
 
 				if (modValue >= 0) {
-					modsX.innerText = `+${modValue}`;
+					modsX.innerText = `(+${modValue})`;
 				}
 				else if (modValue < 0) {
-					modsX.innerText = `${modValue}`;
+					modsX.innerText = `(${modValue})`;
 				}
-				else modsX.innerText = `+0`;
+				else modsX.innerText = `(+0)`;
 
 			}
 
@@ -42,7 +42,7 @@ window.onload = function(){
 
 	//Adiciona e remove classes:
 
-	var classe;
+	var classe, divclasse, nivel;
 	var n = 1;
 	var classes = document.getElementById('classes');
 
@@ -53,12 +53,23 @@ window.onload = function(){
 
 		n++;
 
-		classe = document.createElement('input');
-		classe.type = "text";
-		classe.id = `classe${n}`;
-		classe.name = classe.id;
+		divclasse = document.createElement('div');
+		divclasse.setAttribute("class", "classe");
 
-		classes.insertBefore(classe, classes.childNodes[n]);
+		classe = document.createElement('input');
+		classe.setAttribute("list", "classOpt");
+		classe.setAttribute("placeholder", "classe");
+		classe.name = `classe${n}`;
+
+		nivel = document.createElement('input');
+		nivel.name = `nvclasse${n}`;
+		nivel.type = "number";
+		nivel.setAttribute("placeholder", "nível");
+
+		divclasse.appendChild(classe);
+		divclasse.appendChild(nivel);
+
+		classes.insertBefore(divclasse, classes.childNodes[n]);
 
 	}
 
