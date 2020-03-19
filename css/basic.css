@@ -13,9 +13,9 @@ body{
 	color: #210606;
 	background-image: url("../img/bg.png");
 	background-attachment: fixed;
+	font-family: "Helvetica", "Arial", sans-serif;
 }
 
-div#principal{
-	position: relative;
-	top: 100px;
+main{
+	min-height: 100%;
 }
