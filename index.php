@@ -14,6 +14,7 @@
 			</div>
 		</div>
 	</main>
-	<?php include "components/scripts.php" ?>
+
+<script type="text/javascript" src="/rpg-calc/js/navbar.js"></script>
 </body>
 </html>
